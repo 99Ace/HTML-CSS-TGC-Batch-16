@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- Input for text -->
+        <div>
+            <label for="">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name">
+            <label for="">Last Name</label>
+            <input type="text" name="lname" id="lname" value="Beckham">
+        </div>
+        <!-- Input for email -->
+        <div>
+            <label for="">Email</label>
+            <input type="email" placeholder="xyz@gmail.com">
+        </div>
+        <!-- Input for radio -->
+        <div>
+            <input type="radio" name="gender" id="male" value="Male">Male
+            <input type="radio" name="gender" id="female" value="Female" checked>Female
+        </div>
+        <!-- Input for checkbox -->
+        <div>
+            <input type="checkbox" name="hobbies" id="swimming" value="swimming">Swimming
+            <input type="checkbox" name="hobbies" id="cycling" value="cycling">Cycling
+            <input type="checkbox" name="hobbies" id="dancing" value="dancing" checked>Dancing
+        </div>
+        <!-- Input for dropdown list -->
+        <div>
+            <select name="nationality" id="nationality">
+                <option value="singapore">singapore</option>
+                <option value="malaysia" selected>malaysia</option>
+                <option value="thailand">thailand</option>
+            </select>
+        </div>
+        <!-- Input for textarea -->
+        <div>
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Message"></textarea>
+        </div>
+        <!-- Input for file and date -->
+        <div>
+            <input type="file">
+            <input type="date">
+        </div>
+        <!-- submit buttons -->
+        <div>
+            <!-- using input  -->
+            <input type="submit" value="Send">
+            <!-- using button -->
+            <button>Submit</button>
+            <!-- using a tag but will need styling  -->
+            <a href="">Submit</a>
+        </div>
+    </form>
+</body>
+</html>
