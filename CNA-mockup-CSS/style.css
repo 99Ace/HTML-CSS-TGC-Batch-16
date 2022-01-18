@@ -1,0 +1,21 @@
+ul {
+    margin: 0;
+    padding:0;
+    /* border: 1px black solid; */
+    /* background-color: lightgray; */
+    background-color: rgb(215, 215, 215);
+    /* background-color: #b3b3b3; */
+    /* background-color: rgba(152, 152, 152, 0.427); */
+}
+li {
+    /* border: 1px blue solid; */
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight:600;
+    font-size: 1.1rem;
+    padding: 8px 50px ;
+    display: block;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* flex apply to parent */
+        .parent {
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            /* flex-direction: row; */
+
+            flex-wrap: wrap;
+            /* only works when it is flex-wrap:wrap */
+            /* align-content: space-between; */
+
+        }
+        .child {
+            box-sizing: border-box;
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+        }
+        .red {
+            background-color: red;
+            /* align-self: center; */
+        }
+        .yellow {
+            background-color: yellow;
+            /* order: -1; */
+        }
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child red"></div>
+        <div class="child yellow"></div>
+        <div class="child green"></div>
+        <div class="child red"></div>
+        <div class="child yellow"></div>
+        <div class="child green"></div>
+        <div class="child red"></div>
+        <div class="child yellow"></div>
+        <div class="child green"></div>
+    </div>
+</body>
+</html>

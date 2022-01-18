@@ -1,0 +1,129 @@
+/* navbar styling */
+body {
+    margin: 0;
+    /* background-color: red; */
+}
+.nav {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+}
+.logo, .nav-links, .search {
+    /* border: 1px solid black; */
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-link {
+    margin-left: auto;
+}
+.nav-link>ul {
+    margin: 0;
+    padding: 0;
+}
+.nav-link>ul>li{
+    /* border: 1px solid blue; */
+    display: inline-block;
+}
+.nav-link>ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 0 20px;
+}
+
+.search>i {
+    font-size: 1.4rem;
+    color: orangered;
+    margin-left: 20px;
+}
+
+/* main image styling */
+#main-image {
+    height: 280px;
+    background-color: palegoldenrod;
+    background-image: url(../images/food.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.callout {
+    /* background-color: paleturquoise; */
+}
+#main-image h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+.main-search {
+    display: flex;
+}
+.main-search>input {
+    flex: 1;
+}
+.main-search>button {
+    font-size: 1.5rem;
+    padding: 4px 8px;
+    background-color: orangered;
+    border: none;
+    color: white;
+}
+
+/* editor */
+#editor h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.listing-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+.listing-card {
+    min-height: 400px;
+    width: 300px;
+    /* background-color: paleturquoise; */
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+}
+/* use this during testing */
+.list-img {
+    /* background-color: pink; */
+}
+/* make the image to expand or reduce the width to fit 100% of the parent div */
+.list-img>img {
+    width: 100%;
+}
+.list-info {
+    /* background-color: red; */
+    flex: 1;
+    padding: 10px;
+}
+
+/* set as class and can re-use for all the other tags */
+.list-tag {
+    text-decoration: none;
+    color: orangered;
+    border: 1px solid orangered;
+    padding: 4px 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+/* create the hover effect for .list-tag */
+.list-tag:hover {
+    color: white;
+    background-color: orangered;
+}
